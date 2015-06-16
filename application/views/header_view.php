@@ -36,7 +36,7 @@
 
     <!-- Custom styles for this template -->
     <link href="<?= CSS_DIR ?>/carousel.css" rel="stylesheet">
-sssss
+
  </head>
 <!-- NAVBAR
 ================================================== -->
