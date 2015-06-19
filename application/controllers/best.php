@@ -27,7 +27,7 @@ class Best extends CI_Controller {
 		$data['returnURL']= 'best';
 		$data['header']= $this->load->view('header_view', $data, true); 
 		$data['topMenu']= $this->load->view('/best/best_top_menu_view', $data, true);
-		$this->load->view('best/best_main_view', $data);
+		$this->load->view('best/best_main_view_proto', $data);
 	}
 }
 ?>
