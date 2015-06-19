@@ -2,7 +2,9 @@
 <?php echo $header; ?>
 <body>
 <!-- Intro page -->
+<!-- 
 <?php echo $intro; ?>
+-->
 <!-- Top menu -->
 <?php echo $topMenu; ?>
 
