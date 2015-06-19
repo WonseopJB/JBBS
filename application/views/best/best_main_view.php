@@ -3,17 +3,22 @@
 <body>
 <!-- Top menu -->
 <?php echo $topMenu; ?>
-
 <style type="text/css">
- .containerx 
- {
-    border: 1px solid red;
- } 
+  .container_slide
+  {
+    border: 0px solid red;    
+  }
+
+  .carousel-caption
+  {
+    border: 1px solid red; 
+    height: 350px;
+  }
 </style>
 
 	<!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border: 0px solid red; width:100%; height:300px; z-index:1 ;position:fixed">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border: 0px solid red; width:100%; height:350px; z-index:1 ;position:fixed">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -21,11 +26,11 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
 		<li data-target="#myCarousel" data-slide-to="3"></li>
 	  </ol>
-      <div class="carousel-inner" role="listbox" style="height:300px;">
-        <div class="item active" style="border: 1px solid red;">
+      <div class="carousel-inner" role="listbox" style="border: 1px solid red; height:350px;">
+        <div class="item active">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container" style=" border: 1px solid red; height:300px;">
-            <div class="carousel-caption" style="border: 1px solid red; height:300px;">
+          <div class="container_slide">
+            <div class="carousel-caption">
               <h1>베스트1</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
             </div>
@@ -33,8 +38,8 @@
         </div>
         <div class="item">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container" style="border: 1px solid red; height:300px;">
-            <div class="carousel-caption" style="border: 1px solid red; height:300px;">
+          <div class="container_slide">
+            <div class="carousel-caption">
               <h1>베스트2</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             </div>
@@ -42,8 +47,8 @@
         </div>
         <div class="item">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
+          <div class="container_slide">
+            <div class="carousel-caption" >
               <h1>베스트3</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             </div>
@@ -51,7 +56,7 @@
 		</div>	
 		 <div class="item">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Fourth slide">
-          <div class="container">
+          <div class="container_slide">
             <div class="carousel-caption">
               <h1>베스트4</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>

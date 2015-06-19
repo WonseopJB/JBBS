@@ -4,10 +4,54 @@
 * top menu css files : '<?= BOOT_STRAP_DIR ?>/dist/css/bootstrap.min.cs' and '<?= CSS_DIR ?>/carousel.css'
 
 -->
+<style type="text/css">
+   .nav-up   {
+    top: -50px;
+    transition:0.2s;
+   }
+</style>
+
+<script type="text/javascript">
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#scrollNav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('#scrollNav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('#scrollNav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    lastScrollTop = st;
+}
+</script>
 
 	<div class="navbar-wrapper">
       <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav id='scrollNav' style='border:0px solid red;' class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <div style='float:left; border:0px solid red; width:15%'>
