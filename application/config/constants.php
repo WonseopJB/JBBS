@@ -127,6 +127,7 @@ $hosts = $_SERVER['HTTP_HOST'];
 define('JS_DIR', 'http://'.$hosts.'/includes/js');
 define('CSS_DIR', 'http://'.$hosts.'/includes/css');
 define('BOOT_STRAP_DIR', 'http://'.$hosts.'/includes/js/bootstrap-3.3.2');
+define('IMAGES', 'http://'.$hosts.'/images/');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

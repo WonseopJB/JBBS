@@ -51,7 +51,7 @@ function hasScrolled() {
 
 	<div class="navbar-wrapper">
       <div class="container">
-        <nav id='scrollNav' style='border:0px solid red;' class="navbar navbar-inverse navbar-fixed-top">
+        <nav id='scrollNav' style='border:1px solid red;' class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <div style='float:left; border:0px solid red; width:15%'>

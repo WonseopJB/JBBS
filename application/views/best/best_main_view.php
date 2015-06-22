@@ -6,19 +6,24 @@
 <style type="text/css">
   .container_slide
   {
-    border: 0px solid red;    
+    border: 1px solid black;    
   }
 
   .carousel-caption
   {
     border: 1px solid red; 
-    height: 350px;
+    height: 70%;
+  }
+
+  .row
+  {
+
+    background-color: white;
   }
 </style>
-
 	<!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border: 0px solid red; width:100%; height:350px; z-index:1 ;position:fixed">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border: 1px solid red; width:100%; height:auto; z-index:1 ; position:fixed;">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -26,7 +31,7 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
 		<li data-target="#myCarousel" data-slide-to="3"></li>
 	  </ol>
-      <div class="carousel-inner" role="listbox" style="border: 1px solid red; height:350px;">
+      <div class="carousel-inner" role="listbox" style="border: 10px solid red; height:100%;">
         <div class="item active">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container_slide">
@@ -78,26 +83,32 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing" style="padding-top:550px">
+<div  style="border:5px solid orange; position:absolute; z-index:2; width:100%; height:auto; margin-top:150%; background-color:white">
+    <div class="container marketing" >
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
+      <div class="row" style="position:relative; border:5px solid blue; z-index:2;">
+        <div class="col-lg-4" style="border: 1px solid red">
+          <img src="<?= IMAGES ?>/p2.jpg" alt="TEST" style="width: 140px; height: 140px;">
+          <h2>EXE</h2>
+          <p></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" style="border: 1px solid red">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
+          <h2>1Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4" style="border: 1px solid red">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
+          <h2>2Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4" style="border: 1px solid red">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
+          <h2>3Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
@@ -152,11 +163,10 @@
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       <?=$_SERVER['HTTP_HOST'] ?>
-	  </footer>
+	    </footer>
 
     </div><!-- /.container -->
-
-
+</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
