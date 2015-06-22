@@ -23,7 +23,7 @@
 </style>
 	<!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border: 1px solid red; width:100%; height:auto; z-index:1 ; position:fixed;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border: 0px solid red; width:100%; z-index:1 ; position:fixed;">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -31,7 +31,7 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
 		<li data-target="#myCarousel" data-slide-to="3"></li>
 	  </ol>
-      <div class="carousel-inner" role="listbox" style="border: 10px solid red; height:100%;">
+      <div class="carousel-inner" role="listbox" style="border: 0px solid red; height:100%;">
         <div class="item active">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container_slide">
@@ -83,7 +83,7 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-<div  style="border:5px solid orange; position:absolute; z-index:2; width:100%; height:auto; margin-top:150%; background-color:white">
+<div  style="border:5px solid orange; position:absolute; z-index:2; width:100%; height:auto; margin-top:500px; background-color:white">
     <div class="container marketing" >
 
       <!-- Three columns of text below the carousel -->
